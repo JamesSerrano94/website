@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Serrano personal page</title>
+</head>
+<style>
+    body {
+        background: rgb(0, 0, 0);
+        color:rgb(0, 253, 34);
+        font-family: 'Roboto Mono', monospace;
+        border-radius: 0;
+    }
+    .profile-pic {
+        display: block;              /* makes margin auto work */
+        margin: 80px auto;              /* centers it horizontally */
+        width: 300px;                /* set size */
+        height: 300px;               /* force equal width/height */
+        object-fit: cover;           /* crops to fill circle */
+        border-radius: 50%;          /* makes it circular */
+        animation: fadein 4s;
+        }
+    .project-pic{
+        display: block;              /* makes margin auto work */
+        margin: 20px auto;              /* centers it horizontally */
+        width: 150px;                /* set size */
+        height: 150px;               /* force equal width/height */
+        object-fit: cover;           /* crops to fill circle */
+        border-radius: 50%;          /* makes it circular */
+    }
+    .projects {
+        max-width: 900px;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); /* 5 across */
+        gap: 50px 28px;                         /* row/column gaps */
+        justify-items: center;                  /* center images in cells */
+        align-items: start;
+        }
+
+    .project_figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: rgb(0, 253, 34);
+    }
+
+    .hero {
+        overflow: hidden;
+        margin: 0 auto 16px;         /* centers block-level paragraph */
+        line-height: 1.5;
+        white-space: nowrap;
+        text-align: center;
+        animation:  typing 2s steps(400);
+        }
+    .hero2 {
+        overflow: hidden;
+        margin: 0 auto 16px;         /* centers block-level paragraph */
+        line-height: 1.5;
+        width:0%;
+        white-space: nowrap;
+        text-align: center;
+        animation:  typing 2s steps(400, end) forwards;
+        animation-delay: 1s;
+        }
+    .hero3 {
+        overflow: hidden;
+        margin: 0 auto 16px;         /* centers block-level paragraph */
+        line-height: 1.5;
+        width:0%;
+        white-space: nowrap;
+        text-align: center;
+        animation:  typing 2s steps(400, end) forwards;
+        animation-delay: 2s;
+        }
+    .hero4 {
+        overflow: hidden;
+        margin: 0 auto 16px;         /* centers block-level paragraph */
+        line-height: 1.5;
+        width:0%;
+        white-space: nowrap;
+        text-align: center;
+        animation:  typing 2s steps(400, end) forwards;
+        animation-delay: 3s;
+        }
+    .caption {
+        overflow: hidden;
+        margin: 0 auto 16px;         /* centers block-level paragraph */
+        line-height: 1.5;
+        width:0%;
+        white-space: nowrap;
+        text-align: center;
+        animation:  typing 2s steps(400, end) forwards;
+        animation-delay: 3s;
+        }
+    @keyframes cursor {
+        50% {border-color: transparent}
+    }
+    @keyframes typing {
+        from { width: 0%; }
+        to   { width: 100%; }
+
+
+    }
+    @keyframes fadein {
+    from {
+        opacity:0;}
+    to {
+        opacity:1;}
+    }
+
+
+</style>
+<body>
+    <section id="profile-pic" aria-label="Intro" class = "profile-pic">
+        <img src="images/headshot.png" alt="James Serrano — software engineer" class="profile-pic">
+        </section>
+
+    <section id="hero" aria-label="Intro" class = "hero"></section>
+        <h1 class = "hero">AI Innovator<br><br></h1>
+        <p class="hero">
+            I specialize in studying and improving the design of advanced AI systems,
+        </p>
+        <p class="hero2">
+            from generative models to robotic learning algorithms.
+        </p>
+        <p class = hero3>
+            By analyzing architectures in depth and refining their performance,
+        </p>
+        <p class ="hero4">
+            I aim to push the boundaries of what intelligent systems can achieve.
+        </p>
+
+
+</section>
+
+<section class="projects">
+  <figure class="project-pic">
+    <a href="https://github.com/JamesSerrano94/School-Projects" target="_blank">
+    <img src="images/Robot.png" alt="Initiation Learning" class="project-pic">
+    <figcaption class = "project_figcaption">Initiation Learning</figcaption>
+    </a>
+  </figure>
+  <figure class="project-pic">
+    <a href="https://github.com/JamesSerrano94/Polyform" target="_blank">
+    <img class="project-pic" src="images/Polyform.png" alt="Polyform">
+    <figcaption class = "project_figcaption">Polyform Generator</figcaption>
+    </a>
+  </figure>
+  <figure class="project-pic">
+    <a href="https://github.com/yale-swe/f24-yale-career-pathway-planner" target="_blank">
+    <img class="project-pic" src="images/coursemap.jpg" alt="YaleCourseMap">
+    <figcaption class = "project_figcaption">Course Planner</figcaption>
+    </a>
+  </figure>
+  <figure class="project-pic">
+    <a href="https://github.com/JamesSerrano94/Ntris" target="_blank">
+    <img class="project-pic" src="images/ntris.png" alt="NTris">
+    <figcaption class = "project_figcaption">N-Tris</figcaption>
+    </a>
+  </figure>
+  <figure class="project-pic">
+    <a href="https://github.com/JamesSerrano94/RecipeCartSerrano" target="_blank">
+    <img class="project-pic" src="images/recipes.png" alt="RecipeCart">
+    <figcaption class = "project_figcaption">RecipeCart</figcaption>
+    </a>
+  </figure>
+  <figure class="project-pic">
+    <a href="https://github.com/yale-cpsc-419-25sp/project-project-group-25" target="_blank">
+    <img class="project-pic" src="images/NBA-All-Time-Fantasy-Draft.png" alt="NBA Fantasy League">
+    <figcaption class = "project_figcaption">NBA League</figcaption>
+    </a>
+  </figure>
+  <figure class="project-pic">
+    <a href="https://github.com/JamesSerrano94/School-Projects" target="_blank">
+    <img class="project-pic" src="images/chess.jpg" alt="Minmax Chess">
+    <figcaption class = "project_figcaption">Minmax Chess</figcaption>
+    </a>
+  </figure>
+  <figure class="project-pic">
+    <a href="https://colab.research.google.com/drive/1d0odg3eMmopmRESFFWYLnmmnRI77MtyY" target="_blank">
+    <img class="project-pic" src="images/deepfake.webp" alt="Deepfake Detector">
+    <figcaption class = "project_figcaption">Deepfake Detector</figcaption>
+    </a>
+  </figure>
+  <figure class="project-pic">
+    <a href="https://github.com/JamesSerrano94/School-Projects" target="_blank">
+    <img class="project-pic" src="images/face.jpg" alt="Age Estimator AI">
+    <figcaption class = "project_figcaption">Age Estimator</figcaption>
+    </a>
+  </figure>
+  <figure class="project-pic">
+    <a href="https://github.com/nanoMFG/unet-sem/blob/master/domain_size_analysis.ipynb" target="_blank">
+    <img class="project-pic" src="images/graphine.jpg" alt="Misc Project">
+    <figcaption class = "project_figcaption">Graphine Analysis</figcaption>
+    </a>
+  </figure>
+</section>
+</body>
+</html>
