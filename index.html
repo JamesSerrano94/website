@@ -29,6 +29,31 @@
         object-fit: cover;           /* crops to fill circle */
         border-radius: 50%;          /* makes it circular */
     }
+    .skills-header{
+    text-align:center;
+    font-size:40px;
+    margin-top:80px;
+    margin-bottom:40px;
+    color:rgb(0, 253, 34);
+}
+    .skills {
+        max-width: 900px;
+        margin: 20px auto;
+        margin-bottom: 250px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); /* 5 across */
+        gap: 250px 28px;                         /* row/column gaps */
+        justify-items: center;                  /* center images in cells */
+        align-items: start;
+        }
+    .skill-pic{
+        display: block;              /* makes margin auto work */
+        margin: 20px auto;              /* centers it horizontally */
+        width: 150px;                /* set size */
+        height: 150px;               /* force equal width/height */
+        object-fit: cover;           /* crops to fill circle */
+        border-radius: 50%;          /* makes it circular */
+    }
     .projects {
         max-width: 900px;
         margin: 20px auto;
@@ -152,6 +177,40 @@
         </p>
 
 
+</section>
+
+<section class="skills">
+    <h1 class="skills-header">Skills</h1>
+  <figure class="project-pic">
+    <img src="images/Robot.png" alt="Imitiation Learning" class="skill-pic">
+  </figure>
+  <figure class="skill-pic">
+    <img class="skill-pic" src="images/Polyform.png" alt="Polyform">
+  </figure>
+  <figure class="skill-pic">
+    <img class="skill-pic" src="images/coursemap.jpg" alt="YaleCourseMap">
+  </figure>
+  <figure class="skill-pic">
+    <img class="skill-pic" src="images/ntris.png" alt="NTris">
+  </figure>
+  <figure class="skill-pic">
+    <img class="skill-pic" src="images/recipes.png" alt="RecipeCart">
+  </figure>
+  <figure class="skill-pic">
+    <img class="skill-pic" src="images/NBA-All-Time-Fantasy-Draft.png" alt="NBA Fantasy League">
+  </figure>
+  <figure class="skill-pic">
+    <img class="skill-pic" src="images/chess.jpg" alt="Minmax Chess">
+  </figure>
+  <figure class="skill-pic">
+    <img class="skill-pic" src="images/deepfake.webp" alt="Deepfake Detector">
+  </figure>
+  <figure class="skill-pic">
+    <img class="skill-pic" src="images/face.jpg" alt="Age Estimator AI">
+  </figure>
+  <figure class="skill-pic">
+    <img class="skill-pic" src="images/graphine.jpg" alt="Misc Project">
+  </figure>
 </section>
 
 <section class="projects">
